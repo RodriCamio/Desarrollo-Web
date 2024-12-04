@@ -43,7 +43,7 @@ Este proyecto me permitió:
 ## Cómo Ejecutar
 1. Clonar este repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/RodriCamio/Desarrollo-Web.git
    ```
 2. Abrir el archivo `index.html` en cualquier navegador web.
 
