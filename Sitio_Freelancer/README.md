@@ -38,12 +38,12 @@ Este proyecto me permitió:
 - Integrar **normalize.css** para garantizar consistencia entre navegadores.
 
 ## Captura de Pantalla
-![Diseñador Freelancer][(https://i.postimg.cc/GpqW4gQ1/screenshot.png)](https://postimg.cc/qt6bYLSm)
+![Diseñador Freelancer](https://i.postimg.cc/GpqW4gQ1/screenshot.png)(https://postimg.cc/qt6bYLSm)
 
 ## Cómo Ejecutar
 1. Clonar este repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/RodriCamio/Desarrollo-Web.git
    ```
 2. Abrir el archivo `index.html` en cualquier navegador web.
 
