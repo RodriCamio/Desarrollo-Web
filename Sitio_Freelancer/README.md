@@ -38,7 +38,7 @@ Este proyecto me permitió:
 - Integrar **normalize.css** para garantizar consistencia entre navegadores.
 
 ## Captura de Pantalla
-![Diseñador Freelancer][(https://i.postimg.cc/GpqW4gQ1/screenshot.png)](https://postimg.cc/qt6bYLSm)
+![Diseñador Freelancer](https://i.postimg.cc/GpqW4gQ1/screenshot.png)(https://postimg.cc/qt6bYLSm)
 
 ## Cómo Ejecutar
 1. Clonar este repositorio:
