@@ -58,7 +58,7 @@ h1, h2, h3 {
 
 /** IMAGENES **/
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 /** HEADER **/
@@ -171,8 +171,6 @@ img {
 }
 .nosotros__imagen {
     grid-column: 2 / 3;
-    width: 100%;
-    height: auto;
 }
 
 .comprar__titulo {
@@ -194,8 +192,18 @@ img {
     margin: 0;
 }
 .bloque__imagen {
-    width: 100%;
 }
+
+/** PRODUCTO **/
+.camisa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* cuatro columnas */
+    gap: 2rem;
+    margin: 0;
+    padding: 0rem 15rem; /* Espacio interno */
+}
+
+
 
 /* Configuración secundaria: menor o igual a 768px pero mayor a 480px (Tablet) */
 @media (max-width: 1000px) and (min-width: 730px) {
@@ -234,6 +242,11 @@ img {
         grid-template-columns: repeat(2, 1fr); /* dos columna */
         padding: 2.5rem;
     }
+
+    .camisa{
+        grid-template-columns: repeat(1, 1fr); /* cuatro columnas */
+        padding: 2.5rem;
+    }
 }
 /* Configuración terciaria: menor o igual a 480px (Celular) */
 @media (max-width: 730px) {
@@ -270,7 +283,12 @@ img {
 
     .bloques{
         grid-template-columns: 1fr; /* una columna */
-        padding: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .camisa{
+        grid-template-columns: repeat(1, 1fr); /* cuatro columnas */
+        padding: 1rem;
     }
 }
 
