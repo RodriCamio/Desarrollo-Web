@@ -1,5 +1,8 @@
 # Diseñador Freelancer - Proyecto de Aprendizaje en HTML y CSS
 
+## Captura de Pantalla
+[![Diseñador Freelancer](https://i.postimg.cc/GpqW4gQ1/screenshot.png)](https://postimg.cc/qt6bYLSm)
+
 Este proyecto fue desarrollado como parte de un curso de Udemy impartido por **Juan Pablo De la Torre Valdez**. Es un primer ejercicio práctico para aprender y aplicar conceptos fundamentales de **HTML** y **CSS**, diseñando una página web para un diseñador freelancer ficticio.
 
 ## Tecnologías Utilizadas
@@ -36,9 +39,6 @@ Este proyecto me permitió:
 - Implementar íconos SVG en diseños modernos.
 - Crear diseños responsive básicos usando unidades relativas como `rem` y propiedades de `viewport`.
 - Integrar **normalize.css** para garantizar consistencia entre navegadores.
-
-## Captura de Pantalla
-![Diseñador Freelancer](https://i.postimg.cc/GpqW4gQ1/screenshot.png)(https://postimg.cc/qt6bYLSm)
 
 ## Cómo Ejecutar
 1. Clonar este repositorio:
