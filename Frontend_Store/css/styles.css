@@ -1,4 +1,5 @@
 :root {
+    /* Definición de variables CSS para colores y fuentes */
     --primario: #df2691;
     --primarioOscuro: #51062e;
     --primarioClaro: #f76fc8;
@@ -6,128 +7,120 @@
 
     --secundario: #ffc107;
     --secundarioOscuro: #e29400;
-    --secundarioClaro: #ffee46;
-
-    --blanco: #fff;
-    --negro: #000;
 
     --fuentePrincipal: 'Staatliches', cursive;
-    --fondo: {
-        
-    }
-}/* Definimos los colores */
+}
 
 /** GLOBALES **/
 html {
-    font-size: 62,5%;
-    box-sizing: border-box;
-    /*scroll-snap-type: y mandatory;*/
+    font-size: 62,5%; /* Base: 10px = 1rem */
+    box-sizing: border-box; /* Box-sizing para todos los elementos */
 }
-*, *::before, *::after {
-    box-sizing: inherit;
+*, *:before, *:after {
+    box-sizing: inherit; /* Hereda el box-sizing definido en html */
 }
 body {
-    font-size: 1.6rem; /** 1rem = 10px **/
-    line-height: 1.5;
-    font-family: var(--fuentePrincipal);
-    color: var(--primarioMasClaro);
-    background-color: #51062e;
+    font-size: 1.6rem; /* Tamaño base de fuente */
+    line-height: 1.5; /* Altura de línea */
+    font-family: var(--fuentePrincipal); /* Fuente principal */
+    color: var(--primarioMasClaro); /* Color del texto */
+    background-color: #51062e; /* Color de fondo */
 }
 
 /** TIPOGRAFIA **/
 .staatliches-regular {
     font-family: "Staatliches", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 400; /* Peso normal */
+    font-style: normal; /* Sin cursiva */
 }  
 p {
-    font-size: 1.3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--primarioMasClaro);
-    margin: 0;
+    font-size: 1.3rem; /* Tamaño del texto */
+    font-family: Arial, Helvetica, sans-serif; /* Fuentes alternativas */
+    color: var(--primarioMasClaro); /* Color del texto */
+    margin: 0; /* Sin margen */
 }
-a {text-decoration: none;}
-h1 {font-size: 3.5rem;}
-h2 {font-size: 2.7rem;}
-h3 {font-size: 1.9rem;}
+a {text-decoration: none;} /* Quitar subrayado de los enlaces */
+h1 {font-size: 3.5rem;} /* Títulos principales */
+h2 {font-size: 2.7rem;} /* Subtítulos */
+h3 {font-size: 1.9rem;} /* Títulos secundarios */
 h1, h2, h3 {
-    text-align: center;
-    color: var(--secundario);
-    font-family: var(--fuentePrincipal);
+    text-align: center; /* Centrados */
+    color: var(--secundario); /* Color secundario */
+    font-family: var(--fuentePrincipal); /* Fuente principal */
 }
 
 /** IMAGENES **/
 img {
-    width: 100%;
+    width: 100%; /* Imagen ajustada al ancho del contenedor */
 }
 
 /** HEADER **/
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra el logo en el header */
 }
 .header__logo {
-    margin: 2rem 0; /* Espacio arriba y abajo */
+    margin: 2rem 0; /* Margen superior e inferior */
 }
 
-/** NAVEGACION **/
+/** NAVEGACIÓN **/
 .nav {
-    background-color: var(--primario);
-    padding: 1rem;
+    background-color: var(--primario); /* Color de fondo */
+    padding: 1rem; /* Espaciado interno */
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
+    justify-content: center; /* Enlaces centrados */
+    gap: 2rem; /* Espacio entre enlaces */
+    margin-bottom: 1rem; /* Espacio inferior */
 }
 .nav__enlace {
     font-family: var(--fuentePrincipal);
     color: var(--primarioMasClaro);
-    font-size: 2rem;
+    font-size: 2rem; /* Tamaño del texto */
 }
 .nav__enlace--activo,
 .nav__enlace:hover {
-    color: var(--secundario);
+    color: var(--secundario); /* Color de hover o enlace activo */
 }
 
 /** CONTENEDOR - TITULOS **/
 .contenedor {
-    margin: 1 auto ;
+    margin: 1 auto ; /* Ajuste para centrado */
 }
 
 /** MAIN **/
 .contenido {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Contenido centrado */
 }
 
 /** PRODUCTOS **/
 .producto {
     background-color: var(--primario);
-    padding: 1rem;
+    padding: 1rem; /* Espaciado interno */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  /* Elementos centrados */
     justify-content: center;
-    border: 1px solid var(--primarioClaro); /* Opcional: para visualizar bordes */
+    border: 1px solid var(--primarioClaro);
     border-radius: 0.5rem; /* Opcional: esquinas redondeadas */
 }
 .producto__imagen {
-    max-width: 100%; /* Ajusta la imagen dentro del contenedor */
-    height: auto;
+    max-width: 100%; /* Imagen ajustada */
+    height: auto; /* Proporciones mantenidas */
 }
 .producto__nombre{
-    font-size: 3rem;
+    font-size: 3rem; /* Tamaño del nombre */
 }
 .producto__precio{
-    font-size: 2.8rem;
-    color: var(--secundario);
+    font-size: 2.8rem; /* Tamaño del precio */
+    color: var(--secundario); /* Color destacado */
 }
 .producto__nombre,
 .producto__precio {
     font-family: var(--fuentePrincipal);
-    margin: 1rem 0;
+    margin: 1rem 0; /* Espaciado vertical */
     text-align: center;
-    line-height: 3rem;
+    line-height: 3rem; /* Espaciado entre líneas */
 }
 
 /** GRID **/
@@ -136,9 +129,9 @@ img {
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
     gap: 2rem; /* Espacio entre elementos */
     padding: 2rem; /* Espacio interno */
-    grid-auto-rows: minmax(250px, auto); /* Ajusta altura */
+    grid-auto-rows: minmax(250px, auto); /* Altura mínima de filas */
 }
-/* Configuración secundaria: menor o igual a 1000px pero mayor a 730px (Tablet) */
+/* Configuración secundaria: Tablets */
 @media (max-width: 1000px) and (min-width: 730px) {
     .grid {
         grid-template-columns: 50% 50%; /* Dos columnas */
@@ -146,7 +139,7 @@ img {
         padding: 1.5rem;
     }
 }
-/* Configuración terciaria: menor o igual a 730px (Celular) */
+/* Configuración terciaria: Celulares */
 @media (max-width: 730px) {
     .grid {
         grid-template-columns: 1fr; /* Una columna */
@@ -173,7 +166,7 @@ img {
     grid-column: 1 / 3;
     background-image: url(../img/grafico1.jpg);
 }
-/* Configuración secundaria: menor o igual a 1000px pero mayor a 730px (Tablet) */
+/* Configuración secundaria: Tablets */
 @media (max-width: 1000px) and (min-width: 730px) {
     .graficos {
         min-height: 30rem;
@@ -187,7 +180,7 @@ img {
         grid-column: 1 / 3;
     }
 }
-/* Configuración terciaria: menor o igual a 730px (Celular) */
+/* Configuración terciaria: Celulares */
 @media (max-width: 730px) {
     .graficos {
         min-height: 10rem;
@@ -216,7 +209,7 @@ img {
 .nosotros__imagen {
     grid-column: 2 / 3;
 }
-/* Configuración secundaria: menor o igual a 1000px pero mayor a 730px (Tablet) */
+/* Configuración secundaria: Tablets */
 @media (max-width: 1000px) and (min-width: 730px) {
     .nosotros {
         grid-template-columns: 1fr; /* una columna */
@@ -232,7 +225,7 @@ img {
         height: auto;
     }
 }
-/* Configuración terciaria: menor o igual a 730px (Celular) */
+/* Configuración terciaria: Celulares */
 @media (max-width: 730px) {
     .nosotros {
         grid-template-columns: 1fr; /* Una columna */
@@ -269,14 +262,14 @@ img {
 .bloque__titulo {
     margin: 0;
 }
-/* Configuración secundaria: menor o igual a 1000px pero mayor a 730px (Tablet) */
+/* Configuración secundaria: Tablets */
 @media (max-width: 1000px) and (min-width: 730px) {
     .bloques{
         grid-template-columns: repeat(2, 1fr); /* dos columna */
         padding: 2.5rem;
     }
 }
-/* Configuración terciaria: menor o igual a 730px (Celular) */
+/* Configuración terciaria: Celulares */
 @media (max-width: 730px) {
     .bloques{
         grid-template-columns: 1fr; /* una columna */
@@ -303,7 +296,7 @@ img {
     border-radius: .5rem; /* Opcional: esquinas redondeadas */
     min-width: none;
 }
-/* Configuración secundaria: menor o igual a 1000px pero mayor a 730px (Tablet) */
+/* Configuración secundaria: Tablets */
 @media (max-width: 1000px) and (min-width: 730px) {
     .camisa{
         grid-template-columns: repeat(1, 1fr); /* cuatro columnas */
@@ -312,7 +305,7 @@ img {
         min-width: auto;
     }
 }
-/* Configuración terciaria: menor o igual a 730px (Celular) */
+/* Configuración terciaria: Celulares */
 @media (max-width: 730px) {
     .camisa{
         grid-template-columns: repeat(1, 1fr); /* cuatro columnas */
@@ -352,7 +345,7 @@ img {
     cursor: pointer; /* puntero con forma de "mano" */
     background-color: var(--secundarioOscuro);
 }
-/* Configuración secundaria: menor o igual a 1000px pero mayor a 730px (Tablet) */
+/* Configuración secundaria: Tablets */
 @media (max-width: 1000px) and (min-width: 730px) {
     .formulario {
         grid-template-columns: 50% 50%;
@@ -363,7 +356,7 @@ img {
         grid-column: 1 / 3;
     }
 }
-/* Configuración terciaria: menor o igual a 730px (Celular) */
+/* Configuración terciaria: Celulares */
 @media (max-width: 730px) {
     .formulario {
         grid-template-columns: 1fr;
