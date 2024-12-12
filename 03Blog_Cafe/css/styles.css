@@ -6,9 +6,9 @@
     --primarioMasClaro: #f7f4ef;
     --secundario: #ffc107;
     --secundarioOscuro: #e29400;
+    --negro: #000000;
 
     /* Fuentes */
-    --fuentePrincipal: 'Staatliches', cursive;
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 }/* Definición de variables CSS para colores y fuentes */
@@ -104,6 +104,44 @@ img {
     color: var(--primarioMasClaro);
 }
 
+/** BLOG **/
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+.entrada {
+    border-bottom: 1px solid var(--primarioClaro);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+} /* el ultimo item de arriba para abajo */
+
+/** BOTON **/
+.boton {
+    display: block;
+    font-family: var(--fuenteParrafos);
+    color: var(--primarioMasClaro);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+    }
+}
+.boton--primario {
+    background-color: var(--negro);
+}
+
 /** CONTENEDOR - TITULOS **/
 @media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
 @media (max-width: 730px) {/**/}/* Configuración terciaria: Celulares */
@@ -118,11 +156,14 @@ img {
 
 /** FOOTER **/
 .footer {
-    background-color: var(--primario);
+    background-color: var(--primarioOscuro);
     padding: 1rem;
     margin-top: 2rem;
 }
 .footer__texto{
     text-align: center;
-    font-family: var(--fuentePrincipal);
+    color: var(--primarioMasClaro);
+    font-family: var(--fuenteHeading);
+    font-size: 2rem;
+    font-weight: 400;
 }
