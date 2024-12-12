@@ -1,0 +1,78 @@
+:root {
+    /* Paleta de Colores */
+    --primario: #784d3c;
+    --primarioOscuro: #2f1c19;
+    --primarioClaro: #c3a581;
+    --primarioMasClaro: #f7f4ef;
+    --secundario: #ffc107;
+    --secundarioOscuro: #e29400;
+
+    /* Fuentes */
+    --fuentePrincipal: 'Staatliches', cursive;
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+}/* Definición de variables CSS para colores y fuentes */
+html {
+    font-size: 62.5%; /* Base: 10px = 1rem */
+    box-sizing: border-box; /* Box-sizing para todos los elementos */
+}
+*, *:before, *:after {
+    box-sizing: inherit; /* Hereda el box-sizing definido en html */
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2; /* En los blog se usa mucho un interlineado un poco mas grande */
+}
+
+/** GLOBALES **/
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto; /* sirve para centrar*/
+}
+a {    text-decoration: none;   } /* Quitar subrayado de los enlaces */
+h1 {   font-size: 4.8rem;       } /* Títulos principales */
+h2 {   font-size: 4rem;         } /* Subtítulos */
+h3 {   font-size: 3.2rem;       } /* Títulos secundarios */
+h4 {   font-size: 2.8rem;       } 
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading); /* Fuente principal */
+}
+
+/** IMAGENES **/
+img {
+    max-width: 100%;
+}
+
+/** UTILIDADES **/
+.no-margin      {   margin: 0;          }
+.no-padding     {   padding: 0;         }
+.centrar-texto  {   text-align: center; }
+
+/** HEADER **/
+
+/** NAVEGACIÓN **/
+
+/** CONTENEDOR - TITULOS **/
+@media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
+@media (max-width: 730px) {/**/}/* Configuración terciaria: Celulares */
+
+/** NOSOTROS **/
+@media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
+@media (max-width: 730px) {/**/}/* Configuración terciaria: Celulares */
+
+/** FORMULARIO **/
+@media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
+@media (max-width: 730px) {/**/}/* Configuración terciaria: Celulares */
+
+/** FOOTER **/
+.footer {
+    background-color: var(--primario);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.footer__texto{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+}

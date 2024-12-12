@@ -13,7 +13,7 @@
 
 /** GLOBALES **/
 html {
-    font-size: 62,5%; /* Base: 10px = 1rem */
+    font-size: 62.5%; /* Base: 10px = 1rem */
     box-sizing: border-box; /* Box-sizing para todos los elementos */
 }
 *, *:before, *:after {
