@@ -22,7 +22,7 @@ html {
 body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
-    line-height: 2; /* En los blog se usa mucho un interlineado un poco mas grande */
+    line-height: 1.5; /* En los blog se usa mucho un interlineado un poco mas grande */
 }
 
 /** GLOBALES **/
@@ -32,8 +32,11 @@ body {
     margin: 0 auto; /* sirve para centrar*/
 }
 a {    text-decoration: none;   } /* Quitar subrayado de los enlaces */
-h1 {   font-size: 4.8rem;       } /* Títulos principales */
-h2 {   font-size: 4rem;         } /* Subtítulos */
+h1 {   font-size: 5rem;       } /* Títulos principales */
+h2 {   
+    font-size: 3.8rem;
+    line-height: 1.2;     
+} /* Subtítulos */
 h3 {   font-size: 3.2rem;       } /* Títulos secundarios */
 h4 {   font-size: 2.8rem;       } 
 h1, h2, h3, h4 {
@@ -49,10 +52,57 @@ img {
 .no-margin      {   margin: 0;          }
 .no-padding     {   padding: 0;         }
 .centrar-texto  {   text-align: center; }
+.interlineado-corto { line-height: .3rem;}
 
 /** HEADER **/
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem; /* Tamaño de la imagen */
+    background-size: cover; /* Que cubra todo el area */
+    background-repeat: no-repeat; /* Que no se repita la imagen */
+    background-position: center center; /* Centramos la imagens vertical y horizontalmente para derle prioridad al centro*/
+}
+.header__texto {
+    text-align: center;
+    color: var(--primarioMasClaro);
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header__texto{
+        margin-top: 20rem;
+    }
+}
+.logo {
+    color: var(--primarioMasClaro);
+}
+.logo__nombre {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
 
 /** NAVEGACIÓN **/
+@media (min-width: 768px) {
+    h2 {
+        line-height: 2;
+    }
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;     
+    }
+    .navegacion {
+        display: flex;
+        column-gap: 2rem;
+    }
+}
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primarioMasClaro);
+}
 
 /** CONTENEDOR - TITULOS **/
 @media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
