@@ -32,15 +32,13 @@ body {
     margin: 0 auto; /* sirve para centrar*/
 }
 a {    text-decoration: none;   } /* Quitar subrayado de los enlaces */
-h1 {   font-size: 5rem;       } /* Títulos principales */
-h2 {   
-    font-size: 3.8rem;
-    line-height: 1.2;     
-} /* Subtítulos */
+h1 {   font-size: 5rem;         } /* Títulos principales */
+h2 {   font-size: 3.8rem;       } /* Subtítulos */
 h3 {   font-size: 3.2rem;       } /* Títulos secundarios */
 h4 {   font-size: 2.8rem;       } 
 h1, h2, h3, h4 {
     font-family: var(--fuenteHeading); /* Fuente principal */
+    line-height: 1.2; 
 }
 
 /** IMAGENES **/
@@ -92,7 +90,8 @@ img {
         justify-content: space-between;
         align-items: center;     
     }
-    .navegacion {
+    .navegacion,
+    .footer__navegacion {
         display: flex;
         column-gap: 2rem;
     }
@@ -141,14 +140,46 @@ img {
 .boton--primario {
     background-color: var(--negro);
 }
+.boton--secundario {
+    background-color: var(--primario);
+}
 
-/** CONTENEDOR - TITULOS **/
-@media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
-@media (max-width: 730px) {/**/}/* Configuración terciaria: Celulares */
+/** CURSOS **/
+.cursos {
+    list-style: none;
+}
+.widget-curso {
+    border-bottom: 1px solid var(--primarioClaro);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.widget-curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.widget-curso__info {
+    font-weight: 400;
+}
+.widget-curso__label,
+.widget-curso__info {
+    font-size: 1.8rem;
+}
+
 
 /** NOSOTROS **/
-@media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
-@media (max-width: 730px) {/**/}/* Configuración terciaria: Celulares */
+@media (min-width: 780px) {
+    .sobre-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto {
+        flex-basis: calc(50% - 1rem);
+    }
+}
 
 /** FORMULARIO **/
 @media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
@@ -156,14 +187,17 @@ img {
 
 /** FOOTER **/
 .footer {
-    background-color: var(--primarioOscuro);
-    padding: 1rem;
-    margin-top: 2rem;
+    background-color: var(--negro);
+    padding: 1rem 0 2rem 0;
+    margin-top: 3rem;
+}
+.footer__logo{
+    text-align: left;
+    color: var(--primarioMasClaro);
+    font-family: var(--fuenteHeading);
+    font-size: 3rem;
+    font-weight: 400;
 }
 .footer__texto{
     text-align: center;
-    color: var(--primarioMasClaro);
-    font-family: var(--fuenteHeading);
-    font-size: 2rem;
-    font-weight: 400;
 }
