@@ -48,6 +48,7 @@ img {
 
 /** UTILIDADES **/
 .no-margin      {   margin: 0;          }
+.margin-bottom  {   margin-bottom: 1.5rem;}
 .no-padding     {   padding: 0;         }
 .centrar-texto  {   text-align: center; }
 .interlineado-corto { line-height: .3rem;}
@@ -78,6 +79,23 @@ img {
 }
 .logo__bold {
     font-weight: 700;
+}
+
+/** FOOTER **/
+.footer {
+    background-color: var(--negro);
+    padding: 1rem 0 2rem 0;
+    margin-top: 3rem;
+}
+.footer__logo{
+    text-align: left;
+    color: var(--primarioMasClaro);
+    font-family: var(--fuenteHeading);
+    font-size: 3rem;
+    font-weight: 400;
+}
+.footer__texto{
+    text-align: center;
 }
 
 /** NAVEGACIÓN **/
@@ -187,8 +205,21 @@ img {
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
     }
+    .curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+    }
+    .curso__info {
+    font-weight: normal;
+    }
+    .curso__label,
+    .curso__info {
+    font-size: 1.8rem;
+    }
+    .curso__informacion {
+        margin-bottom: 2rem;
+    }
 }
-
 
 /** NOSOTROS **/
 @media (min-width: 780px) {
@@ -205,19 +236,13 @@ img {
     }
 }
 
-/** FOOTER **/
-.footer {
-    background-color: var(--negro);
-    padding: 1rem 0 2rem 0;
-    margin-top: 3rem;
+/** ENTRADA **/
+.entrada {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
-.footer__logo{
-    text-align: left;
-    color: var(--primarioMasClaro);
-    font-family: var(--fuenteHeading);
-    font-size: 3rem;
-    font-weight: 400;
-}
-.footer__texto{
-    text-align: center;
+.entrada__texto p {
+    line-height: normal;
+    margin-bottom: 2rem;
 }
