@@ -246,3 +246,11 @@ img {
     line-height: normal;
     margin-bottom: 2rem;
 }
+
+/** CONTACTO **/
+.contacto__bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
