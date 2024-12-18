@@ -148,7 +148,8 @@ img {
 .cursos {
     list-style: none;
 }
-.widget-curso {
+.widget-curso,
+.curso {
     border-bottom: 1px solid var(--primarioClaro);
     margin-bottom: 2rem;
 }
@@ -156,16 +157,36 @@ img {
     border: none;
     margin-bottom: 0;
 }
-.widget-curso__label {
+.widget-curso__label,
+.curso__label {
     font-family: var(--fuenteHeading);
     font-weight: bold;
 }
-.widget-curso__info {
-    font-weight: 400;
+.widget-curso__info,
+.curso__info {
+    font-weight: normal;
 }
 .widget-curso__label,
-.widget-curso__info {
+.widget-curso__info,
+.curso__label,
+.curso__info {
     font-size: 1.8rem;
+}
+
+/* PAGINA CURSOS */
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--primarioClaro);
+}
+.curso:last-of-type {
+    border: none;
+}
+@media (min-width: 780px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
 }
 
 
@@ -175,15 +196,14 @@ img {
         display: flex;
         justify-content: space-between;
     }
+    p {
+        margin: 0;
+    }
     .sobre-nosotros__imagen,
     .sobre-nosotros__texto {
         flex-basis: calc(50% - 1rem);
     }
 }
-
-/** FORMULARIO **/
-@media (max-width: 1000px) and (min-width: 730px) {/**/}/* Configuración secundaria: Tablets */
-@media (max-width: 730px) {/**/}/* Configuración terciaria: Celulares */
 
 /** FOOTER **/
 .footer {
