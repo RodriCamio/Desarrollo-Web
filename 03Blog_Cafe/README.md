@@ -1,7 +1,7 @@
 # Blog de Café - Proyecto 3
 
 ## Captura de Pantalla
-[![screenshot-Blog-Cafe.png](https://i.postimg.cc/k41xCTHP/screenshot-Blog-Cafe.png)](https://postimg.cc/R6t3QL9g)
+[![screenshot-Blog-Cafe.webp](https://i.postimg.cc/8zm43mTN/screenshot-Blog-Cafe.webp)](https://postimg.cc/QFVcK5By)
 
 ## Descripción
 Este es el tercer proyecto del curso de Desarrollo Web y consiste en un Blog de Café diseñado para aplicar conceptos avanzados de HTML, CSS y principio de JavaScript importando una libreria. A lo largo del desarrollo, se implementaron buenas prácticas y herramientas modernas para optimizar el rendimiento, la responsividad y la experiencia de usuario.  
