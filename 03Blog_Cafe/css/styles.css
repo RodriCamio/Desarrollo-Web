@@ -7,6 +7,7 @@
     --secundario: #ffc107;
     --secundarioOscuro: #e29400;
     --negro: #000000;
+    --blanco: #ffffff;
 
     /* Fuentes */
     --fuenteHeading: 'PT Sans', sans-serif;
@@ -149,11 +150,15 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 @media (min-width: 768px) {
     .boton {
         display: inline-block;
     }
+}
+.boton:hover {
+    cursor: pointer;
 }
 .boton--primario {
     background-color: var(--negro);
@@ -253,4 +258,30 @@ img {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/** FORMULARIO **/
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label {
+    flex: 0 0 15rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field {
+    flex: 1;
+}
+.campo__field--textarea {
+    height: 20rem;
+}
+.boton--derecha {
+    justify-content: flex-end;
 }
