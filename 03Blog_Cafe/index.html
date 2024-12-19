@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafe</title>
+    <!-- Prefetch -->
+     <link rel="prefetch" href="nosotros.html" as="document"> <!-- hay que determinar cual es la pagina mas visitada y reemplazar aca -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Preload -->
@@ -48,7 +51,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy"  src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.web" type="imagen/webp">
+                        <img loading="lazy"  src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de Granos de Cafe</h4>
@@ -59,7 +65,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.web" type="imagen/webp">
+                        <img loading="lazy"  src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">3 Deliciosas Recetas</h4>
@@ -70,7 +79,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.web" type="imagen/webp">
+                        <img loading="lazy"  src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Beneficios del Cafe</h4>
