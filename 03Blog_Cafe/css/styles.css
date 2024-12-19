@@ -46,6 +46,18 @@ h1, h2, h3, h4 {
 img {
     max-width: 100%;
 }
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header {
+    background-image: url(../img/banner.jpg);
+}
+.webp .contacto__bg {
+    background-image: url(../img/contacto.webp);
+}
+.no-webp .contacto__bg {
+    background-image: url(../img/contacto.jpg);
+}
 
 /** UTILIDADES **/
 .no-margin      {   margin: 0;          }
@@ -56,7 +68,6 @@ img {
 
 /** HEADER **/
 .header{
-    background-image: url(../img/banner.jpg);
     height: 60rem; /* Tamaño de la imagen */
     background-size: cover; /* Que cubra todo el area */
     background-repeat: no-repeat; /* Que no se repita la imagen */
@@ -254,7 +265,6 @@ img {
 
 /** CONTACTO **/
 .contacto__bg {
-    background-image: url(../img/contacto.jpg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
